@@ -1,4 +1,4 @@
-package com.jesse.example;
+package com.jesse.example.multidialect;
 
 public class BDialect implements Dialect{
     @Override

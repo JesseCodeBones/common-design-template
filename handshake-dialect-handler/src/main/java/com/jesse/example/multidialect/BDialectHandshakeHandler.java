@@ -1,4 +1,4 @@
-package com.jesse.example;
+package com.jesse.example.multidialect;
 
 import java.util.function.Function;
 
