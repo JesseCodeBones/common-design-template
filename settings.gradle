@@ -1,0 +1,3 @@
+rootProject.name = 'common-design-template'
+include 'handshake-dialect-handler'
+
