@@ -1,3 +1,4 @@
 rootProject.name = 'common-design-template'
 include 'handshake-dialect-handler'
-
+include 'nio'
+include ':nio:nio-file-channel'
