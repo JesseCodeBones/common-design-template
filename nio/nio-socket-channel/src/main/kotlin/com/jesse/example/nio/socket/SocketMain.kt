@@ -19,7 +19,7 @@ class SocketMain {
 
     fun createServer() {
         ServerSocketChannel.open().also { serverSocketChannel ->
-            val socketServer = serverSocketChannel.socket().bind(InetSocketAddress(PORT))
+            val socketServer = serverSocketChannel.socket().bind(InetSocketAddress(PORT), 500)
             while (true){
                 val client = serverSocketChannel.accept()
                 println("Connection Set:  " + client.remoteAddress);
