@@ -17,7 +17,7 @@ class LockerLockDemo {
         }
         try {
             try {
-                if (!locker.tryLock(5, TimeUnit.SECONDS)) {//max run time for all pending thread
+                if (!locker.tryLock(5, TimeUnit.SECONDS)) {//max waiting time for each lock
                     throw IllegalStateException("timeout to retrieve lock ${Thread.currentThread().name}")
                 }
             }catch (e:InterruptedException) {
