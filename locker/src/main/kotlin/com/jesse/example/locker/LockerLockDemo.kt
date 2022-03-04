@@ -27,7 +27,7 @@ class LockerLockDemo {
 
             Thread.sleep(1000)
             println(index)
-            callback.apply {  }
+            callback()
             Thread.sleep(1000)
 
         }finally {

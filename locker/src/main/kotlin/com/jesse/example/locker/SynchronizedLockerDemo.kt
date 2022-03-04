@@ -15,7 +15,7 @@ class SynchronizedLockerDemo {
         synchronized(lock) {
             Thread.sleep(1000)
             println(id)
-            callback.apply {  }
+            callback()
             Thread.sleep(1000)
         }
     }
