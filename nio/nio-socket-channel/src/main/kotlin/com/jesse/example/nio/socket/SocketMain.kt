@@ -35,6 +35,7 @@ class SocketMain {
                         fileChannel.write(buffer)
                         buffer.clear()
                     }
+                    client.write(buffer)
                     fileChannel.close()
                     println("finished the write")
                 }
@@ -45,6 +46,7 @@ class SocketMain {
 
     fun mockSendText() {
         SocketChannel.open().also { socketChannel ->
+            socketChannel.configureBlocking(false)
             socketChannel.connect(InetSocketAddress(PORT))
             val strToWrite = "hello world ${Thread.currentThread().name} \n"
             val c = CharBuffer.wrap(strToWrite)
