@@ -1,3 +1,3 @@
 cmake_minimum_required(VERSION 3.10)
 project(Demo)
-add_executable(Demo  stringArray.cpp)
+add_executable(Demo  test.cpp)
