@@ -1,2 +1,6 @@
 #include "MyMath.hpp"
-int MyMath::add(int a, int b) { return a + b; }
+#include <iostream>
+int MyMath::add(int a, int b) {
+  std::cout << "hello add\n";
+  return a + b;
+}
